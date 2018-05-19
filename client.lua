@@ -40,15 +40,7 @@ function CheckWeapon(ped)
 	end
 	return false
 end
---[[
-function DisableActions(ped)
-	DisableControlAction(1, 140, true)
-	DisableControlAction(1, 141, true)
-	DisableControlAction(1, 142, true)
-	DisableControlAction(1, 37, true) -- Disables INPUT_SELECT_WEAPON (TAB)
-	DisablePlayerFiring(ped, true) -- Disable weapon firing
-end
---]]
+
 function loadAnimDict( dict )
 	while ( not HasAnimDictLoaded( dict ) ) do
 		RequestAnimDict( dict )
