@@ -5,8 +5,7 @@ local weapons = {
 	"WEAPON_COMBATPISTOL",
 }
 
- 
- Citizen.CreateThread(function()
+Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
 		local ped = PlayerPedId()
@@ -32,6 +31,7 @@ local weapons = {
 		end
 	end
 end)
+
 function CheckWeapon(ped)
 	for i = 1, #weapons do
 		if GetHashKey(weapons[i]) == GetSelectedPedWeapon(ped) then
